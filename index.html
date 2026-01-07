@@ -68,11 +68,17 @@
 
     <div id="videos" class="tab-content">
         <input type="file" accept="video/*">
+
     </div>
 
 <div id="photos" class="tab-content">
-    <input type="file" accept="image/*" multiple onchange="previewImages(event)">
-    <div id="photoPreview" class="photo-preview"></div>
+    <h3>📸 My Photo Gallery</h3>
+
+    <div class="photo-preview">
+        <img src="photos/photo1.jpg" alt="">
+        <img src="photos/photo2.jpg" alt="">
+        <img src="photos/photo3.jpg" alt="">
+    </div>
 </div>
 
 </section>
@@ -112,5 +118,10 @@
 </div>
 
 <script src="script.js"></script>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightboxImg">
+</div>
+
 </body>
 </html>

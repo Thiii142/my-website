@@ -22,3 +22,17 @@ function showTab(tabId) {
 
     document.getElementById(tabId).classList.add("active");
 }
+const galleryImages = document.querySelectorAll(".photo-preview img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+
+galleryImages.forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+function closeLightbox() {
+    lightbox.style.display = "none";
+}
