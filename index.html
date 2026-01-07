@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thi’s Little World🌸</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- MENU -->
+<nav class="menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#discover">Discover</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <h1>Thi’s Little World 🌸</h1>
+    <p>Welcome to my personal website</p>
+
+<details class="post">
+    <summary>🌸 My First Post</summary>
+    <p>
+        Today I learned how to build my first website.
+        It is simple but I feel very happy and proud of myself.
+    </p>
+</details>
+</div>
+
+
+    <img src="avatar.jpg" class="avatar">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h1>About</h1>
+    <p>I am contributing my website.</p>
+</section>
+
+<!-- DISCOVER -->
+<section id="discover">
+    <h1>Discover</h1>
+
+    <div class="discover-menu">
+        <button onclick="showTab('quotes')">Quotes</button>
+        <button onclick="showTab('videos')">Videos</button>
+        <button onclick="showTab('photos')">Photos</button>
+    </div>
+
+<div id="quotes" class="tab-content">
+    <details class="quote-box">
+        <summary>💬 Quotes</summary>
+
+        <p>“Small steps every day.”</p>
+        <p>“You are doing better than you think.”</p>
+        <p>“Learning never stops.”</p>
+    </details>
+</div>
+
+
+    <div id="videos" class="tab-content">
+        <input type="file" accept="video/*">
+    </div>
+
+<div id="photos" class="tab-content">
+    <input type="file" accept="image/*" multiple onchange="previewImages(event)">
+    <div id="photoPreview" class="photo-preview"></div>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h1>Contact</h1>
+    <p>Email: nhanthi.anhk9b@gmail.com</p>
+</section>
+
+<!-- PROFILE -->
+<div class="container">
+    <img src="avatar.jpg" class="avatar reveal">
+
+    <h1>Hi 👋</h1>
+    <p>I am Thi.</p>
+    <p>I am trying to make my website.</p>
+
+    <h2>Introduce</h2>
+    <p>I like to discover new things and put them in my website.</p>
+
+    <h2>Hobbies and Skills</h2>
+    <ul class="skills reveal">
+        <li>Learning new things</li>
+        <li>Working with computer</li>
+        <li>Designing some simple things like video or poster</li>
+        <li>Discovering how to write basic code website</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <a href="https://www.facebook.com/nhanthi.phan.9" class="btn">
+        <i class="fa-brands fa-facebook"></i> Facebook
+    </a>
+    <a href="mailto:nhanthi.anhk9b@gmail.com" class="btn">
+        <i class="fa-solid fa-envelope"></i> Email
+    </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

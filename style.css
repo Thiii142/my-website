@@ -1,0 +1,218 @@
+/* ===== RESET CƠ BẢN ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: pink;
+    margin: 0;
+}
+
+/* ===== MENU ===== */
+.menu {
+    background-color: #d63384;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* ===== SECTION CHUNG ===== */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* ===== TEXT ===== */
+h1 {
+    color: #d63384;
+}
+
+h2 {
+    color: #d63384;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 20px;
+    color: blue;
+}
+
+/* ===== CONTAINER PROFILE ===== */
+.container {
+    background-color: lightcyan;
+    width: 50%;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* ===== AVATAR ===== */
+.avatar {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+/* ===== SKILLS ===== */
+.skills {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background-color: #ffe4ec;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #d63384;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ad296a;
+    transform: translateY(-3px);
+}
+
+/* ===== DISCOVER MENU ===== */
+.discover-menu {
+    margin-top: 20px;
+}
+
+.discover-menu button {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #d63384;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.discover-menu button:hover {
+    background-color: #ad296a;
+}
+
+/* ===== TAB CONTENT ===== */
+.tab-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* ===== PHOTO PREVIEW ===== */
+.photo-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.photo-preview img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.photo-preview img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.post {
+    background-color: #fff0f5;
+    padding: 15px 20px;
+    border-radius: 15px;
+    width: 70%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.post summary {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    color: #d63384;
+}
+
+.post p {
+    margin-top: 10px;
+    color: #444;
+    line-height: 1.6;
+}
+.quote-box {
+    background-color: #fff0f5;
+    padding: 15px 20px;
+    border-radius: 15px;
+    width: 70%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.quote-box summary {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    color: #d63384;
+}
+
+.quote-box p {
+    margin: 8px 0;
+    color: #444;
+}
